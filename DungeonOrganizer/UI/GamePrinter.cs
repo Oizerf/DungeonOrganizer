@@ -12,14 +12,20 @@ public static class GamePrinter
         Console.WriteLine($"{name}: {health} HP");
     }
 
-    public static void ShowItem(string name, int price)
+    public static void ShowInventoryItem(string name, int price)
     {
-        Console.WriteLine($"{name}: {price} szt. złota");
+        Console.WriteLine($"Przedmiot: {name}, cena: {price}");
     }
 
 
     public static void ShowWeapon(string name,int damage)
     {
         Console.WriteLine($"{name} zadaje {damage} obrażeń.");
+    }
+
+
+    public static void ShowMapItem(string symbol)
+    {
+        Console.WriteLine($"Symbol na mapie: {symbol}");
     }
 }
